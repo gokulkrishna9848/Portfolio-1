@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriram. Gokul Krishna Grohith - Actor Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                        url('images/Snapinsta.app_430961387_902092481698891_8966307741220513334_n_1080 (1).jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+        
+        .card-hover {
+            transform: translateY(0);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        .contact-card {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+     
+
+        .watch-now-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .watch-now-btn:hover::after {
+            left: 100%;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(90deg, #3B82F6, transparent);
+        }
+
+        .social-link {
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: #3B82F6;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Hero Section -->
+    <header class="hero-section flex items-center animate__animated animate__fadeIn">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-7xl font-bold mb-6 animate__animated animate__fadeInUp">Sriram. Gokul Krishna Grohith</h1>
+            <p class="text-3xl text-gray-300 mb-8 font-light animate__animated animate__fadeInUp animate__delay-1s">Actor | Performer | Artist</p>
+            <p class="text-xl text-gray-400 animate__animated animate__fadeInUp animate__delay-2s">Crafting stories through performance</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-32 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <img src="images/Snapinsta.app_430905804_377885611621691_7097003131098313609_n_1080.jpg" alt="Professional Headshot" class="rounded-2xl shadow-2xl transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="section-title text-5xl font-bold mb-12">The Artist</h2>
+                    <div class="grid grid-cols-2 gap-8 mb-12">
+                        <div class="p-6 bg-gray-900 rounded-xl">
+                            <h3 class="text-blue-400 font-bold mb-2">Age</h3>
+                            <p class="text-2xl">21</p>
+                        </div>
+                        <div class="p-6 bg-gray-900 rounded-xl">
+                            <h3 class="text-blue-400 font-bold mb-2">Height</h3>
+                            <p class="text-2xl">5'10"</p>
+                        </div>
+                        <div class="p-6 bg-gray-900 rounded-xl">
+                            <h3 class="text-blue-400 font-bold mb-2">Eyes</h3>
+                            <p class="text-2xl">Brown</p>
+                        </div>
+                        <div class="p-6 bg-gray-900 rounded-xl">
+                            <h3 class="text-blue-400 font-bold mb-2">Hair</h3>
+                            <p class="text-2xl">Black</p>
+                        </div>
+                        <div class="p-6 bg-gray-900 rounded-xl">
+                            <h3 class="text-blue-500 font-bold mb-2">Languages</h3>
+                            <p class="text-s">Telugu,Hindi,Tamil,Eng</p>
+                        </div>
+                        <div class="p-6 bg-gray-900 rounded-xl">
+                            <h3 class="text-blue-400 font-bold mb-2">Performs</h3>
+                            <p class="text-m">    Dance,Karate,Boxing</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-xl leading-relaxed">
+                        A passionate performer with an innate ability to breathe life into characters. 
+                        Dedicated to the art of storytelling through authentic and compelling performances.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-32 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold mb-20 text-center">Featured Works</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <a href="https://youtu.be/7_lwmj72GdY?si=NU4oCGZOUBMvC3_b" target="_blank" class="group">
+                    <div class="relative overflow-hidden rounded-2xl card-hover bg-gray-900">
+                        <img src="images/Screenshot 2024-12-21 140328.png" alt="Arjun Dad" class="w-full transform group-hover:scale-105 transition-all duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
+                            <h3 class="text-3xl font-bold mb-3">Arjun Dad</h3>
+                            <p class="text-blue-400 text-lg mb-2">Lead Role</p>
+                            <p class="text-gray-300 mb-4">Short Film | 2023</p>
+                            <button class="watch-now-btn px-8 py-3 rounded-full text-white text-lg font-semibold">Watch Now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/9QC-KZoTSH0?si=eWUyysnMFFQQKMfM" target="_blank" class="group">
+                    <div class="relative overflow-hidden rounded-2xl card-hover bg-gray-900">
+                        <img src="images/Screenshot 2024-12-21 140442.png" alt="Lucky Star" class="w-full transform group-hover:scale-105 transition-all duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
+                            <h3 class="text-3xl font-bold mb-3">Lucky Star</h3>
+                            <p class="text-blue-400 text-lg mb-2">Lead Role</p>
+                            <p class="text-gray-300 mb-4">Short Film | 2023</p>
+                            <button class="watch-now-btn px-8 py-3 rounded-full text-white text-lg font-semibold">Watch Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-32 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold mb-20 text-center">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="gallery-item rounded-2xl">
+                    <img src="images/IMG_0539 (1).JPG" alt="Gallery 1" class="w-full h-96 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl">
+                    <img src="images/g.jpg" alt="Gallery 2" class="w-full h-96 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl">
+                    <img src="images/IMG_0536 (1).JPG" alt="Gallery 3" class="w-full h-96 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl">
+                    <img src="images/QP_1702228678594.jpg" alt="Gallery 4" class="w-full h-96 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl">
+                    <img src="images/IMG_1509 (1).JPG" alt="Gallery 5" class="w-full h-96 object-cover">
+                </div>
+                <div class="gallery-item rounded-2xl">
+                    <img src="images/IMG_20231210_225005.jpg" alt="Gallery 6" class="w-full h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-32 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-5xl font-bold mb-20 text-center">Connect</h2>
+            <div class="max-w-3xl mx-auto contact-card p-16 rounded-2xl">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="social-link">
+                            <p class="text-gray-400 text-lg mb-2">Email</p>
+                            <p class="text-xl">sriramgokulkrishna@gmail.com</p>
+                        </div>
+                        <div class="social-link">
+                            <p class="text-gray-400 text-lg mb-2">Mobile</p>
+                            <p class="text-2xl">+91 7305838948</p>
+                        </div>
+                    </div>
+                    <div class="space-y-10">
+                        <div class="social-link">
+                            <p class="text-gray-400 text-lg mb-2">WhatsApp</p>
+                            <p class="text-2xl">        +91    9848450384</p>
+                        </div>
+                        <div class="social-link">
+                            <p class="text-gray-400 text-lg mb-2">Instagram</p>
+                            <p class="text-2xl">@sriram_krishna_</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
